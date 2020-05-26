@@ -37,18 +37,29 @@ public class MainActivity extends AppCompatActivity {
         rG = (RadioGroup) findViewById(R.id.rG);
     }
 
+    /**
+     * Acting for button press
+     * @param view
+     */
     public void btnchange(View view) {
         if (!sW.isChecked()) {
             change();
         }
     }
 
+    /**
+     * Acting for free press
+     * @param view
+     */
     public void rgchange(View view) {
         if (sW.isChecked()) {
             change();
         }
     }
 
+    /**
+     * Changing the background color
+     */
     public void change(){
         int chk=rG.getCheckedRadioButtonId();
         switch (chk) {
